@@ -68,6 +68,7 @@ std::string morse(std::string text) {
 
     return morse_text;
 }
+//кодирование в морзе
 
 int entering_num( std::string message, int upper, int lower)
 {
@@ -83,7 +84,8 @@ int entering_num( std::string message, int upper, int lower)
         std::cin.ignore(std::cin.rdbuf()->in_avail());
     }
     return choice;
-}
+} 
+//проверка на валидность воода чисел
 
 void outplace(std::string text)
 {
@@ -103,6 +105,7 @@ void outplace(std::string text)
 
     }
 }
+//вывод ответа
 
 std::string entering_file_name() 
 {
@@ -127,6 +130,7 @@ std::string entering_file_name()
     file.close();
     return file_name;
 }
+//считывание имени файла и проверка is_open
 
 std::string file_reading()
 {
@@ -146,11 +150,12 @@ std::string file_reading()
     file.close();
     return text;
 }
+//считывание текста из файла
 
 int main() {
 
     setlocale(LC_ALL, "Russian");
-    int choice = 0; //переменная, хранящая выбор в меню пользователя 
+    int choice = 0; 
 
     while (choice != 3)
     {
